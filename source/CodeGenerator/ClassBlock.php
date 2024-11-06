@@ -209,7 +209,7 @@ class ClassBlock extends Block
         $lines = [];
         $lines[] = $this->dumpHeader();
         foreach ($this->uses as $use) {
-            $lines[] = $this->indent("use ${use};");
+            $lines[] = $this->indent("use {$use};");
             $lines[] = '';
         }
         foreach ($this->constants as $constant) {
